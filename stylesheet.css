@@ -7,16 +7,17 @@ html * {
 }
 
 body {
-  background-image: url("winter blur2.png");
-  background-repeat: space;
+  background-image: url("scarlet sea.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: ;
 }
 
 @media only screen and (min-width: 768px) {
-  .logo{
+  .logo {
     display: none;
   }
+
   .overlay {
     display: none;
   }
@@ -25,8 +26,20 @@ body {
     display: none;
   }
 
-  .nav {
+  .release-banner {
     background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: ZrnicRg-Bold, sans-serif;
+  }
+
+  .bannerlogo {
+    position: absolute;
+    right: 100px;
+    margin-top: auto;
+  }
+
+  .nav {
+    background: rgba(0, 0, 0, 0.9);
     text-align: center;
     position: sticky;
     /* Make it stick/fixed */
@@ -54,71 +67,8 @@ body {
 
   li a:hover {
     background: rgba(255, 255, 255, 0.3);
-  }
-
-  .col-1 {
-    width: 8.33%;
-  }
-
-  .col-2 {
-    width: 16.66%;
-  }
-
-  .col-3 {
-    width: 25%;
-    border: 1px solid black;
-  }
-
-  .col-4 {
-    width: 33.33%;
-  }
-
-  .col-5 {
-    width: 41.66%;
-  }
-
-  .col-6 {
-    width: 50%;
-    font-size: 20px;
-    text-align: justify;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .col-7 {
-    width: 58.33%;
-  }
-
-  .col-8 {
-    width: 66.66%;
-  }
-
-  .col-9 {
-    width: 75%;
-  }
-
-  .col-10 {
-    width: 83.33%;
-  }
-
-  .col-11 {
-    width: 91.66%;
-  }
-
-  .col-12 {
-    width: 100%;
-  }
-
-  [class*="col-"] {
-    margin-top: 25px;
-    float: left;
-    padding: 15px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+    border-radius: 15px;
+    transition: .25s;
   }
 
   .left {
@@ -126,22 +76,134 @@ body {
     background: rgba(0, 0, 0, 0);
     text-align: center;
   }
+
+  .banner{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.8);
+
+  }
+
+  .poza-1{
+    width:400px;
+    margin:50px;
+    border-radius: 15px;
+    content: url('battlecry.jpg');
+    transition: 0.5s;
+  }
+  .poza-1:hover{
+    cursor: pointer;
+
+  }
+  .poza-2{
+    width:400px;
+    margin:50px;
+    border-radius: 15px;
+    content: url('Untitled-1.png');
+  }
+.poza h2{
+  color:white;
+  text-align: center;
 }
 
-audio {
-  max-height: 100%;
-  max-width: 100%;
-  margin: auto;
-  object-fit: contain;
+  .container
+  {
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card{
+    background: black;
+    width:350px;
+    margin:20px;
+    border-radius: 15px;
+    color: white;
+  }
+  .card-image{
+    background-color:grey;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .pic1{
+    background-image: url('/Users/octqv/Desktop/Zgripsorum/empyrean.jpg');
+  }
+  .pic2{
+    background-image: url('/Users/octqv/Desktop/Zgripsorum/scarlet sea.jpg');
+  }
+  .card:hover
+  {
+    transform:scale(1.05);
+    transition: .75s;
+  }
+  .card h2{
+    padding: 10px;
+  }
+  .card p{
+    padding: 10px;
+    text-align: justify;
+  }
+  .card a{
+    background-color: white;
+    padding:15px 20px;
+    display:block;
+    text-align: center;
+    margin:20px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  .card a:hover{
+    cursor: pointer;
+  }
 }
+
 
 @media only screen and (max-width: 768px) {
 
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
+
+
+    .banner{
+      display:flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      justify-content: center;
+      background:rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+
+    }
+
+    .poza-1{
+      width:400px;
+      margin:50px;
+      border-radius: 15px;
+      content: url('battlecry.jpg');
+      transition: 0.5s;
+    }
+    .poza-1:hover{
+      cursor: pointer;
+
+    }
+    .poza-2{
+      width:400px;
+      margin:50px;
+      border-radius: 15px;
+      content: url('Untitled-1.png');
+    }
+  .poza h2{
+    color:white;
+    text-align: center;
   }
-  .logo{
+
+  .butonmeniu {
+    position: fixed;
+    color: white;
+  }
+
+  .logo {
     text-align: center;
   }
 
@@ -154,13 +216,55 @@ audio {
     background: rgba(0, 0, 0, 0);
     text-align: center;
   }
-
-  .col-6 {
-    font-size: 20px;
-    text-align: justify;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+  .container
+  {
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+  .card{
+    background: black;
+    width:100%;
+    margin:20px;
+    border-radius: 15px;
+    color: white;
+  }
+  .card-image{
+    background-color:grey;
+    height: 400px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .pic1{
+    background-image: url('/Users/octqv/Desktop/Zgripsorum/empyrean.jpg');
+  }
+  .pic2{
+    background-image: url('/Users/octqv/Desktop/Zgripsorum/scarlet sea.jpg');
+  }
+  .card:hover
+  {
+    transform:scale(1.05);
+    transition: .75s;
+  }
+  .card h2{
+    padding: 10px;
+  }
+  .card p{
+    padding: 10px;
+    text-align: justify;
+  }
+  .card a{
+    background-color: white;
+    padding:15px 20px;
+    display:block;
+    text-align: center;
+    margin:20px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+
 }
 
 .overlay {
@@ -220,6 +324,7 @@ audio {
   right: 45px;
   font-size: 60px;
 }
+
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
