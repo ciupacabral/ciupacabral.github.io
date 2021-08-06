@@ -238,10 +238,10 @@ body {
     border-radius: 15px 15px 0 0;
   }
   .pic1{
-    background-image: url('/Users/octqv/Desktop/Zgripsorum/empyrean.jpg');
+    background-image: url("empyrean.jpg");
   }
   .pic2{
-    background-image: url('/Users/octqv/Desktop/Zgripsorum/scarlet sea.jpg');
+    background-image: url("scarlet sea.jpg");
   }
   .card:hover
   {
