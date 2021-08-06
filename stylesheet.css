@@ -130,10 +130,10 @@ body {
     border-radius: 15px 15px 0 0;
   }
   .pic1{
-    background-image: url("empyrean.jpg");
+    background-image: url('/Users/octqv/Desktop/Zgripsorum/empyrean.jpg');
   }
   .pic2{
-    background-image: url("scarlet sea.jpg");
+    background-image: url('/Users/octqv/Desktop/Zgripsorum/scarlet sea.jpg');
   }
   .card:hover
   {
@@ -162,36 +162,44 @@ body {
 }
 
 
-@media only screen and (max-width: 1007px) {
+@media only screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
 
 
-
+        overflow-x: hidden;
     .banner{
       display:flex;
-      flex-wrap: wrap;
       margin-top: 50px;
       justify-content: center;
       background:rgba(0, 0, 0, 0.8);
       border-radius: 15px;
-
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
     }
 
     .poza-1{
-      width:400px;
-      margin:50px;
+      width:250px;
+      margin: auto;
+      margin-top:30px;
       border-radius: 15px;
       content: url('battlecry.jpg');
       transition: 0.5s;
+      height: auto;
     }
     .poza-1:hover{
       cursor: pointer;
 
     }
     .poza-2{
-      width:400px;
-      margin:50px;
+      width:250px;
+      margin:auto;
+      margin-top:30px;
       border-radius: 15px;
       content: url('Untitled-1.png');
+      height: auto;
     }
   .poza h2{
     color:white;
@@ -205,6 +213,7 @@ body {
 
   .logo {
     text-align: center;
+    margin:auto;
   }
 
   .nav {
@@ -229,6 +238,7 @@ body {
     margin:20px;
     border-radius: 15px;
     color: white;
+    heigh:auto;
   }
   .card-image{
     background-color:grey;
